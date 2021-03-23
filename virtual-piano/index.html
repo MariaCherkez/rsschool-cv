@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Piano</title>  
+  </head>
+  <body>   
+	<header><h1>Virtual Piano</h1></header>
+	<main> 
+	<div class="switch_container">
+		 <button class="switch btn_notes btn_active">Notes</button>
+		 <button class="switch btn_letters">Letters</button>
+		 <button class="switch btn_nothing">Nothing</button>
+	</div>
+	<div class="fullScreen"></div>
+	<div class="piano">
+		<div class="container_keys">
+			<div class="container_white_keys">
+				<div class="key white_key key_note" data-note="a0"></div>
+				<div class="key white_key key_note" data-note="b0"></div>
+				<div class="key white_key key_note" data-note="c1"></div>
+				<div class="key white_key key_note" data-note="d1"></div>
+				<div class="key white_key key_note" data-note="e1"></div>
+				<div class="key white_key key_note" data-note="f1"></div>
+				<div class="key white_key key_note" data-note="g1"></div>
+				<div class="key white_key key_note" data-note="a1"></div>
+				<div class="key white_key key_note" data-note="b1"></div>
+				<div class="key white_key key_note" data-note="c2"></div>
+				<div class="key white_key key_note" data-note="d2"></div>
+				<div class="key white_key key_note" data-note="e2"></div>
+				<div class="key white_key key_note" data-note="f2"></div>
+				<div class="key white_key key_note" data-note="g2"></div>
+				<div class="key white_key key_note" data-note="a2"></div>
+				<div class="key white_key key_note" data-note="b2"></div>
+				<div class="key white_key key_note" data-note="c3" data-letter="q" data-keycode="KeyQ"></div>
+				<div class="key white_key key_note" data-note="d3" data-letter="w" data-keycode="KeyW"></div>
+				<div class="key white_key key_note" data-note="e3" data-letter="e" data-keycode="KeyE"></div>
+				<div class="key white_key key_note" data-note="f3" data-letter="r" data-keycode="KeyR"></div>
+				<div class="key white_key key_note" data-note="g3" data-letter="t" data-keycode="KeyT"></div>
+				<div class="key white_key key_note" data-note="a3" data-letter="y" data-keycode="KeyY"></div>
+				<div class="key white_key key_note" data-note="b3" data-letter="u" data-keycode="KeyU"></div>
+				<div class="key white_key key_note" data-note="c4" data-letter="i" data-keycode="KeyI"></div>
+				<div class="key white_key key_note" data-note="d4" data-letter="o" data-keycode="KeyO"></div>
+				<div class="key white_key key_note" data-note="e4" data-letter="p" data-keycode="KeyP"></div>
+				<div class="key white_key key_note" data-note="f4" data-letter="[" data-keycode="BracketLeft"></div>
+				<div class="key white_key key_note" data-note="g4" data-letter="]" data-keycode="BracketRight"></div>
+				<div class="key white_key key_note" data-note="a4" data-letter="\" data-keycode="Backslash"></div>
+				<div class="key white_key key_note" data-note="b4" data-letter="z" data-keycode="KeyZ"></div>
+				<div class="key white_key key_note" data-note="c5" data-letter="x" data-keycode="KeyX"></div>
+				<div class="key white_key key_note" data-note="d5" data-letter="c" data-keycode="KeyC"></div>
+				<div class="key white_key key_note" data-note="e5" data-letter="v" data-keycode="KeyV"></div>
+				<div class="key white_key key_note" data-note="f5" data-letter="b" data-keycode="KeyB"></div>
+				<div class="key white_key key_note" data-note="g5" data-letter="n" data-keycode="KeyN"></div>
+				<div class="key white_key key_note" data-note="a5" data-letter="m" data-keycode="KeyM"></div>
+				<div class="key white_key key_note" data-note="b5" data-letter="," data-keycode="Comma"></div>
+				<div class="key white_key key_note" data-note="c6"></div>
+				<div class="key white_key key_note" data-note="d6"></div>
+				<div class="key white_key key_note" data-note="e6"></div>
+				<div class="key white_key key_note" data-note="f6"></div>
+				<div class="key white_key key_note" data-note="g6"></div>
+				<div class="key white_key key_note" data-note="a6"></div>
+				<div class="key white_key key_note" data-note="b6"></div>
+				<div class="key white_key key_note" data-note="c7"></div>
+				<div class="key white_key key_note" data-note="d7"></div>
+				<div class="key white_key key_note" data-note="e7"></div>
+				<div class="key white_key key_note" data-note="f7"></div>
+				<div class="key white_key key_note" data-note="g7"></div>
+				<div class="key white_key key_note" data-note="a7"></div>
+				<div class="key white_key key_note" data-note="b7"></div>
+				<div class="key white_key key_note" data-note="c8"></div>
+			</div>
+			<div class="container_black_keys">
+				<div class="key black_key key_note" data-note="a#0"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#1"></div>
+				<div class="key black_key key_note" data-note="d#1"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#1"></div>
+				<div class="key black_key key_note" data-note="g#1"></div>
+				<div class="key black_key key_note" data-note="a#1"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#2"></div>
+				<div class="key black_key key_note" data-note="d#2"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#2"></div>
+				<div class="key black_key key_note" data-note="g#2"></div>
+				<div class="key black_key key_note" data-note="a#2"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#3" data-letter="2" data-keycode="Digit2"></div>
+				<div class="key black_key key_note" data-note="d#3" data-letter="3" data-keycode="Digit3"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#3" data-letter="5" data-keycode="Digit5"></div>
+				<div class="key black_key key_note" data-note="g#3" data-letter="6" data-keycode="Digit6"></div>
+				<div class="key black_key key_note" data-note="a#3" data-letter="7" data-keycode="Digit7"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#4" data-letter="9" data-keycode="Digit9"></div>
+				<div class="key black_key key_note" data-note="d#4" data-letter="0" data-keycode="Digit0"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#4" data-letter="-" data-keycode="Minus"></div>
+				<div class="key black_key key_note" data-note="g#4" data-letter="=" data-keycode="Equal"></div>
+				<div class="key black_key key_note" data-note="a#4" data-letter="+" data-keycode="NumpadAdd"></div>		
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#5" data-letter="s" data-keycode="KeyS"></div>
+				<div class="key black_key key_note" data-note="d#5" data-letter="d" data-keycode="KeyD"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#5" data-letter="g" data-keycode="KeyG"></div>
+				<div class="key black_key key_note" data-note="g#5" data-letter="h" data-keycode="KeyH"></div>
+				<div class="key black_key key_note" data-note="a#5" data-letter="j" data-keycode="KeyJ"></div>			
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#6"></div>
+				<div class="key black_key key_note" data-note="d#6"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#6"></div>
+				<div class="key black_key key_note" data-note="g#6"></div>
+				<div class="key black_key key_note" data-note="a#6"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="c#7"></div>
+				<div class="key black_key key_note" data-note="d#7"></div>
+				<div class="key black_key key_note hidden"></div>
+				<div class="key black_key key_note" data-note="f#7"></div>
+				<div class="key black_key key_note" data-note="g#7"></div>
+				<div class="key black_key key_note" data-note="a#7"></div>
+				<div class="key black_key key_note hidden"></div> 
+			</div> 
+			</div> 
+			</div> 
+	</main>
+	<footer>
+	<div class="footer_container"> 
+		<a class="github_logo" href="https://github.com/rolling-scopes-school/mariacherkez-JSFE2021Q1">github</a>
+		<a class="school_logo" href="https://rs.school/js/"></a>
+	</div>
+	</footer> 
+  </body>
+  <script src="./assets/js/piano.js"></script>
+</html>

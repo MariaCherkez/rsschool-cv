@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+ 
+html, body {  
+	margin: 0;
+	padding:0;
+	background: #3B3B3D; 
+	background: #65675C;  
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;	 
+}  
+
+h1 {
+	margin: 0;
+	padding:0;  
+	line-height: 60px;
+    font-weight: 300;
+    color: #fff;
+}
+
+header {
+	text-align: center;
+    width: 100%;
+    border-bottom: 1.5px solid;
+	border-image: linear-gradient(to right, #ffffff36, #ffffff67, #fffffff2, #ffffff67, #ffffff36 ) 100% 0%; 
+}
+ 
+main{
+	min-height: calc(100vh - 200px); 
+	padding: 60px 0 0; 
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+    align-items: center;  
+    justify-content: flex-start; 
+    width: 100%; 
+}
+ 
+.switch_container { 
+	display: flex;
+    justify-content: space-between;
+    width: 530px;
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 80px; 
+}
+
+.switch {
+	outline: none;
+	border: none;
+	color: #FFFFFF;
+	width: 170px; 
+	background: #83857A;
+	border-radius: 3px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.switch:hover  {
+	background: #787A70;
+}
+
+.btn_active {
+	background: #ACB673; 
+}
+
+.btn_active:hover {
+	background: #A1A976;
+}
+ 
+.fullScreen {
+	position: absolute;
+	right: 25px;
+	top: 80px;
+	width: 40px;
+	height: 40px;
+	background: url('./assets/img/full-screen.svg') no-repeat 50% 50%;
+	cursor: pointer; 	
+}
+
+.fullScreen:hover {
+	width: 45px;
+	height: 45px;
+	right: 22.5px;
+	top: 77.5px;
+}
+
+.piano {  
+	padding: 25px 20px 15px 20px;
+    border-radius: 5px 5px 20px 20px;
+	background: rgb(0,0,0);
+	background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(61,61,61,1) 47%, rgba(34,34,34,1) 100%);
+	
+}
+
+.container_keys{
+	position: relative;
+}
+
+.container_white_keys { 
+	display: flex;
+	align-items: center;
+}
+
+.container_black_keys{
+	position: absolute;
+    top: 0;
+    left: 17px;
+	right: 17px;
+	display: flex;
+	justify-content: space-between;
+	pointer-events: none; 
+}
+ 
+.key{ 
+     cursor: pointer;	
+	display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+.white_key{ 
+    width: 26.5px;
+    height: 220px;
+    background-color: #F7F5F3;
+    border: 1px solid #999798;
+    border-radius: 0px 0px 5px 5px;  
+}
+
+.black_key{ 
+    width: 23px;
+    height: 145px; 
+    border-radius: 0px 0px 5px 5px;
+	background: #000000;
+	background: linear-gradient(360deg, rgb(53 53 53) 0%, rgb(82 81 81) 17%, rgb(47 48 48) 100%);
+	box-shadow: inset 0px 1px 10px #0c0c0c, 1px 1px 1px #000000; 
+	pointer-events: auto; 
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+.white_key:before{ 
+	position: absolute;
+    bottom: 0;  
+	line-height: 50px; 
+	font-size: 16px;
+	pointer-events: none; 
+	color: #7D7F74;  	
+} 
+.black_key:before{
+	line-height: 30px;
+	pointer-events: none;   
+	position: absolute; 
+	font-size: 12px; 
+	color: #A0A96F; 
+}
+
+.key_note:before{
+	content: attr(data-note);   	
+}
+
+.key_letter:before{
+	content: attr(data-letter);  	
+}
+
+
+.black_key:hover {
+	background: #2B2A2A;
+}
+.white_key:hover {
+	background: #FFFFFF;
+}
+
+.active_w {
+	width: 22.5px; 
+    height: 214px;
+    margin: 0 2px;
+	background: #FFFFFF;	
+	 
+}
+
+.active_b {
+	width: 21px;
+    height: 140px;
+	margin: 0 1px;
+	border-top: 2px solid #1F1F1F; 
+}
+ 
+.key:hover:before { 
+	color: #FBE265; 
+}
+ 
+.key.active_w:before { 
+	color: #37BD80;
+	font-size:14px;
+}
+
+.key.active_b:before {  
+	color: #37BD80;
+	font-size:10px;
+}
+
+footer { 
+	border-top: 1.5px solid;
+	border-image: linear-gradient(to right, #ffffff36, #ffffff67, #fffffff2, #ffffff67, #ffffff36 ) 100% 0%;
+}
+
+.footer_container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+	height: 60px; 
+    margin: 0 auto;
+}
+
+.github_logo {
+	display: block;
+    width: 120px;
+    height: 45px;
+    padding-left: 45px;
+    background-image: url(assets/img/github.svg);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    line-height: 45px;
+    color: #cbd5de;
+    font-size: 16px; 
+    transition: 0.3s;
+	text-decoration: none;
+}
+
+.school_logo {
+	display: block;
+    position: relative;
+    font-family: "Open Sans", sans-serif; 
+    height: 35px;
+    background-image: url(assets/img/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 111px;
+}
